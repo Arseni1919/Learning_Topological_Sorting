@@ -36,8 +36,10 @@ def topological_sorting(nodes: list, sorting_rules: list):
 
 def main():
     nodes = ['agent_1', 'agent_2', 'agent_3', 'agent_4', 'agent_5']
+    nodes.reverse()
+    # nodes = ['agent_1']
     # nodes = ['agent_2']
-    sorting_rules = [('agent_2', 'agent_1'), ('agent_1', 'agent_3'), ('agent_3', 'agent_5'), ('agent_4', 'agent_5')]
+    sorting_rules = [('agent_2', 'agent_1'), ('agent_1', 'agent_4'), ('agent_3', 'agent_5'), ('agent_4', 'agent_5')]
     result = topological_sorting(nodes, sorting_rules)
     print(result)
 
