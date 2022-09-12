@@ -13,8 +13,9 @@ def visit(node, sorted_list, nodes_without_perm_mark, nodes_with_perm_mark, node
 
     for h_node, l_node in sorting_rules:
         if h_node == node:
-            visit(l_node, sorted_list, nodes_without_perm_mark, nodes_with_perm_mark, nodes_with_temp_mark, sorting_rules)
-
+            is_dag = visit(l_node, sorted_list, nodes_without_perm_mark, nodes_with_perm_mark, nodes_with_temp_mark, sorting_rules)
+            if not is_dag:
+                return False
     nodes_with_temp_mark.remove(node)
     nodes_with_perm_mark.append(node)
     sorted_list.insert(0, node)
