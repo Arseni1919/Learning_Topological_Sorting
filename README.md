@@ -46,6 +46,5 @@ def topological_sorting(nodes: list, sorting_rules: list):
 - [wiki | topological sorting](https://en.wikipedia.org/wiki/Topological_sorting#:~:text=In%20computer%20science%2C%20a%20topological,before%20v%20in%20the%20ordering.)
 - [online simulator](https://www.cs.usfca.edu/~galles/visualization/TopoSortDFS.html)
 - [excalidraw.com](https://excalidraw.com/#room=5810807c04346450296c,sIQDdK2IeP8zWEGtubAKJg)
-- []()
 
 
